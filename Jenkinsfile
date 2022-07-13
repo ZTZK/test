@@ -15,15 +15,9 @@ pipeline {
         }
 
         stage('test2') {
-          agent {
-            docker {
-              image 'golang:latest'
-            }
-
-          }
           steps {
             sleep 3
-            sh 'sleep 3'
+            sh 'echo "this is test2 in test"'
           }
         }
 
@@ -32,7 +26,7 @@ pipeline {
 
     stage('test2') {
       steps {
-        sh '1'
+        sh 'echo "this is test2"'
       }
     }
 
