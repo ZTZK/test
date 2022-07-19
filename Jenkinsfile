@@ -17,12 +17,12 @@ pipeline {
         stage('test2') {
           steps {
             sleep 3
-            sh 'echo "this is test2 in test"'
+            sh '''echo "this is test2 in test"
+echo "again"'''
             sleep 2
             sh 'echo "this is test2 in test"'
             sh 'echo "this is test2 in test"'
             sh 'echo "this is test2 in test"'
-
           }
         }
 
