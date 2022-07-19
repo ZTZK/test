@@ -19,6 +19,9 @@ pipeline {
             sleep 3
             sh 'echo "this is test2 in test"'
             sleep 2
+            sh 'echo "this is test2 in test"'
+            sh 'echo "this is test2 in test"'
+            sh 'echo "this is test2 in test"'
 
           }
         }
