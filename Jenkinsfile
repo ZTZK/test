@@ -18,6 +18,8 @@ pipeline {
           steps {
             sleep 3
             sh 'echo "this is test2 in test"'
+            sleep 2
+
           }
         }
 
